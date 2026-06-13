@@ -41,7 +41,7 @@ This project is designed as a **mini web development project** to demonstrate fr
 <img width="915" height="787" alt="image" src="https://github.com/user-attachments/assets/6fdf8527-03bd-40bc-9cfd-36f9acfa09e9" />
 
 
-```md
-![Home Page](images/home.png)
+
+
 ![Menu Page](images/menu.png)
 ![Cart Page](images/cart.png)
