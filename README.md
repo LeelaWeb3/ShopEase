@@ -43,5 +43,3 @@ This project is designed as a **mini web development project** to demonstrate fr
 
 
 
-![Menu Page](images/menu.png)
-![Cart Page](images/cart.png)
