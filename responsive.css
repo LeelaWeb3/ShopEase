@@ -1,0 +1,190 @@
+/* ==========================================
+   ShopEase - Responsive Styles
+   Mobile First Approach
+========================================== */
+
+
+/* =========================
+   Mobile (Default)
+========================= */
+
+body {
+    overflow-x: hidden;
+}
+
+.navbar {
+    flex-wrap: wrap;
+}
+
+.menu-btn {
+    display: block;
+}
+
+.nav-links {
+
+    width: 100%;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    max-height: 0;
+
+    overflow: hidden;
+
+}
+
+.nav-links.active {
+
+    max-height: 300px;
+
+    margin-top: 15px;
+
+}
+
+.hero h1 {
+
+    font-size: 2rem;
+
+}
+
+.hero p {
+
+    font-size: 1rem;
+
+}
+
+.product-grid {
+
+    grid-template-columns: 1fr;
+
+}
+
+.promo-container {
+
+    grid-template-columns: 1fr;
+
+}
+
+
+/* =========================
+   Tablet (768px and above)
+========================= */
+
+@media (min-width: 768px) {
+
+    .menu-btn {
+
+        display: none;
+
+    }
+
+    .navbar {
+
+        flex-wrap: nowrap;
+
+    }
+
+    .nav-links {
+
+        display: flex;
+
+        flex-direction: row;
+
+        width: auto;
+
+        max-height: none;
+
+        overflow: visible;
+
+        gap: 25px;
+
+    }
+
+    .hero {
+
+    flex-direction: row;
+
+    text-align: left;
+
+}
+
+.hero-content {
+
+    flex: 1;
+
+    text-align: left;
+
+}
+
+.hero-image {
+
+    flex: 1;
+
+    display: flex;
+
+    justify-content: center;
+
+}
+   .product-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .promo-container {
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+   
+    .product-detail-card{
+
+    grid-template-columns:1fr 1fr;
+
+    align-items:center;
+
+}
+
+   .cart-item{
+
+    flex-direction:row;
+
+    align-items:center;
+
+}
+
+}
+
+
+/* =========================
+   Desktop (1200px and above)
+========================= */
+
+@media (min-width: 1200px) {
+
+    .hero {
+
+        padding: 120px 8%;
+
+    }
+
+    .hero h1 {
+
+        font-size: 4rem;
+
+    }
+
+    .hero p {
+
+        font-size: 1.2rem;
+
+    }
+
+    .product-grid {
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+}

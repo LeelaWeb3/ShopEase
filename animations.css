@@ -1,0 +1,114 @@
+/* ==========================================
+   ShopEase - Animations
+========================================== */
+
+/* ========= Page Fade In ========= */
+
+body {
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* ========= Product Card Lift ========= */
+
+.product-card {
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* ========= Add To Cart Pulse ========= */
+
+.pulse {
+    animation: pulse 0.4s ease;
+}
+
+@keyframes pulse {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+/* ========= Cart Badge Bounce ========= */
+
+.bounce {
+    animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+
+    0% {
+        transform: scale(1);
+    }
+
+    30% {
+        transform: scale(1.4);
+    }
+
+    60% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+/* ========= Hamburger Menu Slide ========= */
+
+.nav-links {
+    transition: max-height 0.4s ease;
+}
+
+/* ========= Shake Error ========= */
+
+.shake {
+    animation: shake 0.4s;
+}
+
+@keyframes shake {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-6px);
+    }
+
+    40% {
+        transform: translateX(6px);
+    }
+
+    60% {
+        transform: translateX(-6px);
+    }
+
+    80% {
+        transform: translateX(6px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}

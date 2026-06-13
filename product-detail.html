@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEase | Product Details</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+
+
+
+</head>
+
+
+
+<body>
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <a href="index.html">ShopEase</a>
+        </div>
+
+        <button
+            class="menu-btn"
+            id="menuBtn"
+            aria-label="Toggle navigation">
+
+            ☰
+
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+
+            <li>
+
+                <a href="index.html">
+
+                    Home
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="products.html">
+
+                    Products
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="cart.html">
+
+                    Cart
+
+                    <span
+                        class="cart-badge"
+                        id="cart-count">
+
+                        0
+
+                    </span>
+
+                </a>
+
+            </li>
+
+        </ul>
+
+        <button
+            id="themeToggle"
+            class="theme-btn">
+
+            🌙
+
+        </button>
+
+    </nav>
+
+</header>
+
+<main>
+
+<section class="product-detail">
+
+    <div
+        id="productDetailContainer">
+
+        <!--
+            Loaded dynamically
+            from products.js
+        -->
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+
+© 2026 ShopEase.
+All Rights Reserved.
+
+</p>
+
+</footer>
+
+<script src="js/cart.js"></script>
+<script src="js/products.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

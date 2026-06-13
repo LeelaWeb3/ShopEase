@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEase | Products</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+
+
+</head>
+
+
+
+<body>
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <a href="index.html">ShopEase</a>
+        </div>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">
+            ☰
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="products.html">Products</a></li>
+
+            <li>
+                <a href="cart.html">
+                    Cart
+                    <span class="cart-badge" id="cart-count">0</span>
+                </a>
+            </li>
+
+        </ul>
+
+        <button id="themeToggle" class="theme-btn">
+            🌙
+        </button>
+
+    </nav>
+
+</header>
+
+<main>
+
+<section>
+
+    <h2>Our Products</h2>
+
+    <div class="filter-bar">
+
+   <input
+    type="text"
+    id="searchInput"
+    placeholder="Search products..."
+    oninput="searchProducts()">
+
+              <select id="sortSelect" onchange="sortProducts()">
+
+    <option value="default">
+
+        Sort Products
+
+    </option>
+
+    <option value="low">
+
+        Price : Low to High
+
+    </option>
+
+    <option value="high">
+
+        Price : High to Low
+
+    </option>
+
+</select>
+    </div>
+
+    <div
+        class="product-grid"
+        id="productsContainer"
+    >
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+
+    © 2026 ShopEase. All Rights Reserved.
+
+</p>
+
+</footer>
+
+
+
+</body>
+
+</html>

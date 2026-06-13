@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEase | Checkout</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+<script src="js/validation.js"></script>
+
+
+</head>
+
+
+
+<body>
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <a href="index.html">ShopEase</a>
+        </div>
+
+        <button
+            class="menu-btn"
+            id="menuBtn"
+            aria-label="Toggle navigation">
+
+            ☰
+
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="products.html">Products</a></li>
+
+            <li>
+
+                <a href="cart.html">
+
+                    Cart
+
+                    <span
+                        class="cart-badge"
+                        id="cart-count">
+
+                        0
+
+                    </span>
+
+                </a>
+
+            </li>
+
+        </ul>
+
+        <button
+            id="themeToggle"
+            class="theme-btn">
+
+            🌙
+
+        </button>
+
+    </nav>
+
+</header>
+
+<main>
+
+<section class="checkout-section">
+
+<h2>
+
+    Checkout
+
+</h2>
+
+<form
+    id="checkoutForm"
+    novalidate>
+
+<!-- Full Name -->
+
+<label for="fullName">
+
+    Full Name
+
+</label>
+
+<input
+    type="text"
+    id="fullName"
+    maxlength="50"
+    oninput="validateFullName()">
+
+<small id="fullNameError" class="error-message"></small>
+
+<!-- Email -->
+
+<label for="email">
+
+    Email Address
+
+</label>
+
+<input
+    type="email"
+    id="email"
+    oninput="validateEmail()">
+
+<small id="emailError" class="error-message"></small>
+
+<!-- Phone -->
+
+<label for="phone">
+
+    Phone Number
+
+</label>
+
+<input
+    type="text"
+    id="phone"
+    maxlength="10"
+    oninput="validatePhone()">
+
+<small id="phoneError" class="error-message"></small>
+
+<!-- Street -->
+
+<label for="address">
+
+    Street Address
+
+</label>
+
+<input
+    type="text"
+    id="address"
+    oninput="validateAddress()">
+
+<small id="addressError" class="error-message"></small>
+
+<!-- City -->
+
+<label for="city">
+
+    City
+
+</label>
+
+<input
+    type="text"
+    id="city"
+    oninput="validateCity()">
+
+<small id="cityError" class="error-message"></small>
+
+<!-- Postal -->
+
+<label for="postal">
+
+    Postal Code
+
+</label>
+
+<input
+    type="text"
+    id="postal"
+    maxlength="6"
+    oninput="validatePostal()">
+
+<small id="postalError" class="error-message"></small>
+
+<!-- Card -->
+
+<label for="cardNumber">
+
+    Card Number
+
+</label>
+
+<input
+    type="text"
+    id="cardNumber"
+    maxlength="16"
+    oninput="validateCard()">
+
+<small id="cardError" class="error-message"></small>
+
+<!-- Expiry -->
+
+<label for="expiry">
+
+    Expiry Date (MM/YY)
+
+</label>
+
+<input
+    type="text"
+    id="expiry"
+    placeholder="MM/YY"
+    oninput="validateExpiry()">
+
+<small id="expiryError" class="error-message"></small>
+
+<!-- CVV -->
+
+<label for="cvv">
+
+    CVV
+
+</label>
+
+<input
+    type="password"
+    id="cvv"
+    maxlength="3"
+    oninput="validateCVV()">
+
+<small id="cvvError" class="error-message"></small>
+
+<button
+    type="submit"
+    class="btn">
+
+    Place Order
+
+</button>
+
+</form>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+
+© 2026 ShopEase.
+All Rights Reserved.
+
+</p>
+
+</footer>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,880 @@
+/* ===================================================
+   SHOP EASE - GLOBAL STYLES
+   Author : Student Project
+=================================================== */
+
+/* ========== CSS VARIABLES ========== */
+
+:root {
+
+    --primary-color: #2563eb;
+    --secondary-color: #4f46e5;
+    --accent-color: #06b6d4;
+
+    --background-color: #f8fafc;
+    --card-color: #ffffff;
+
+    --text-color: #1e293b;
+    --light-text: #64748b;
+
+    --border-color: #dbeafe;
+
+    --success-color: #16a34a;
+    --error-color: #dc2626;
+
+    --shadow:
+        0px 4px 12px rgba(0,0,0,0.10);
+
+    --radius: 10px;
+
+    --transition: 0.3s ease;
+
+    --heading-size: 2rem;
+    --sub-heading-size: 1.4rem;
+    --normal-size: 1rem;
+
+}
+
+
+/* ========== DARK THEME ========== */
+
+body.dark-mode {
+
+    --background-color: #0f172a;
+
+    --card-color: #1e293b;
+
+    --text-color: #f8fafc;
+
+    --light-text: #cbd5e1;
+
+    --border-color: #334155;
+
+}
+
+
+/* ========== RESET ========== */
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+/* ========== BODY ========== */
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: var(--background-color);
+
+    color: var(--text-color);
+
+    transition: var(--transition);
+
+    line-height: 1.6;
+
+}
+
+
+/* ========== LINKS ========== */
+
+a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+
+/* ========== IMAGES ========== */
+
+img {
+
+    width: 100%;
+
+    display: block;
+
+}
+
+
+/* ========== NAVBAR ========== */
+
+.navbar {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 18px 8%;
+
+    background: var(--card-color);
+
+    box-shadow: var(--shadow);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+}
+
+
+/* Logo */
+
+.logo a {
+
+    font-size: 1.7rem;
+
+    font-weight: bold;
+
+    color: var(--primary-color);
+
+}
+
+
+/* Navigation */
+
+.nav-links {
+
+    list-style: none;
+
+    display: flex;
+
+    gap: 25px;
+
+}
+
+
+.nav-links li a {
+
+    font-weight: 500;
+
+    transition: var(--transition);
+
+}
+
+
+.nav-links li a:hover {
+
+    color: var(--primary-color);
+
+}
+
+
+/* Cart Badge */
+
+.cart-badge {
+
+    background: crimson;
+
+    color: white;
+
+    padding: 2px 8px;
+
+    border-radius: 50px;
+
+    font-size: 0.8rem;
+
+}
+
+
+/* Theme Button */
+
+.theme-btn {
+
+    border: none;
+
+    background: var(--primary-color);
+
+    color: white;
+
+    padding: 10px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+}
+
+
+/* Hamburger */
+
+.menu-btn {
+
+    display: none;
+
+    font-size: 1.5rem;
+
+    background: none;
+
+    border: none;
+
+    cursor: pointer;
+
+    color: var(--text-color);
+
+}
+
+
+/* ========== HERO SECTION ========== */
+
+/* ========== HERO SECTION ========== */
+
+.hero {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 40px;
+
+    padding: 80px 8%;
+
+}
+
+.hero-content {
+
+    text-align: center;
+
+}
+
+.hero h1 {
+
+    font-size: var(--heading-size);
+
+    margin-bottom: 20px;
+
+}
+
+.hero p {
+
+    color: var(--light-text);
+
+    margin-bottom: 30px;
+
+}
+
+.hero-image img {
+
+    max-width: 450px;
+
+    width: 100%;
+
+    border-radius: 12px;
+
+}
+
+
+/* Button */
+
+.btn {
+
+    display: inline-block;
+
+    background: var(--primary-color);
+
+    color: white;
+
+    padding: 12px 30px;
+
+    border-radius: var(--radius);
+
+    transition: var(--transition);
+
+}
+
+
+.btn:hover {
+
+    background: var(--secondary-color);
+
+}
+
+
+/* ========== SECTIONS ========== */
+
+section {
+
+    padding: 60px 8%;
+
+}
+
+
+section h2 {
+
+    text-align: center;
+
+    margin-bottom: 35px;
+
+    font-size: var(--sub-heading-size);
+
+}
+
+
+/* ========== PRODUCT GRID ========== */
+
+.product-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+
+}
+
+
+/* Product Card */
+
+.product-card {
+
+    background: var(--card-color);
+
+    border-radius: var(--radius);
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow);
+
+    transition: var(--transition);
+
+}
+
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-info {
+
+    padding: 20px;
+
+}
+
+
+.product-info h3 {
+
+    margin-bottom: 10px;
+
+}
+
+
+.price {
+
+    color: var(--primary-color);
+
+    font-weight: bold;
+
+    margin: 10px 0;
+
+}
+
+
+/* ========== PROMOTION ========== */
+
+.promo-container {
+
+    display: grid;
+
+    gap: 20px;
+
+}
+
+
+.promo-card {
+
+    background: var(--card-color);
+
+    padding: 25px;
+
+    border-radius: var(--radius);
+
+    text-align: center;
+
+    box-shadow: var(--shadow);
+
+}
+
+
+/* ========== FOOTER ========== */
+
+footer {
+
+    text-align: center;
+
+    padding: 25px;
+
+    background: var(--card-color);
+
+    margin-top: 50px;
+
+}
+
+
+/* ========== FORM ========== */
+
+input,
+select,
+textarea {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 5px;
+
+    margin-bottom: 10px;
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 8px;
+
+    background: var(--card-color);
+
+    color: var(--text-color);
+
+}
+
+
+/* Validation */
+
+.valid {
+
+    border: 2px solid var(--success-color);
+
+}
+
+
+.invalid {
+
+    border: 2px solid var(--error-color);
+
+}
+
+
+.error-message {
+
+    color: var(--error-color);
+
+    font-size: 0.85rem;
+
+    margin-bottom: 10px;
+
+}
+
+/* ===========================
+   FILTER BAR
+=========================== */
+
+.filter-bar{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+    margin-bottom:30px;
+
+}
+
+.filter-bar input{
+
+    padding:12px;
+
+}
+
+.filter-bar select{
+
+    padding:12px;
+
+}
+
+/* ===================================
+   PRODUCT DETAIL PAGE
+=================================== */
+
+.product-detail{
+
+    padding:60px 8%;
+
+}
+
+.product-detail-card{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:30px;
+
+    background:var(--card-color);
+
+    padding:30px;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+}
+
+.product-detail-card img{
+
+    width:100%;
+
+    border-radius:10px;
+
+}
+
+.product-detail-info h2{
+
+    margin-bottom:15px;
+
+}
+
+.product-detail-info p{
+
+    margin-bottom:20px;
+
+}
+
+.product-detail-info button{
+
+    margin-top:15px;
+
+}
+
+/* ====================================
+   CART PAGE
+==================================== */
+
+.cart-section{
+
+    padding:60px 8%;
+
+}
+
+#cartContainer{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+    margin-top:30px;
+
+}
+
+.cart-item{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+    background:var(--card-color);
+
+    padding:20px;
+
+    border-radius:10px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.cart-item img{
+
+    max-width:180px;
+
+    border-radius:10px;
+
+}
+
+.cart-info{
+
+    flex:1;
+
+}
+
+.cart-buttons{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-top:15px;
+
+}
+
+.cart-buttons button{
+
+    padding:8px 15px;
+
+    cursor:pointer;
+
+}
+
+.cart-summary{
+
+    margin-top:40px;
+
+    background:var(--card-color);
+
+    padding:25px;
+
+    border-radius:10px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.cart-summary p{
+
+    margin:15px 0;
+
+}
+
+.empty-cart{
+
+    text-align:center;
+
+    margin-top:40px;
+
+}
+
+.hidden{
+
+    display:none;
+
+}
+
+/* ===================================
+   CHECKOUT
+=================================== */
+
+.checkout-section{
+
+    max-width:700px;
+
+    margin:auto;
+
+    padding:60px 8%;
+
+}
+
+.checkout-section form{
+
+    background:var(--card-color);
+
+    padding:30px;
+
+    border-radius:10px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.checkout-section label{
+
+    display:block;
+
+    margin-top:15px;
+
+    margin-bottom:5px;
+
+    font-weight:bold;
+
+}
+
+.checkout-section button{
+
+    margin-top:25px;
+
+    width:100%;
+
+}
+
+/* ===================================
+   CONFIRMATION PAGE
+=================================== */
+
+.confirmation-section {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 70vh;
+
+    padding: 40px;
+
+}
+
+.confirmation-card {
+
+    background: var(--card-color);
+
+    padding: 40px;
+
+    border-radius: 12px;
+
+    box-shadow: var(--shadow);
+
+    text-align: center;
+
+    max-width: 600px;
+
+    width: 100%;
+
+}
+
+.confirmation-card h1 {
+
+    color: var(--success-color);
+
+    margin-bottom: 20px;
+
+}
+
+.confirmation-card p {
+
+    margin-bottom: 15px;
+
+}
+
+.confirmation-card .btn {
+
+    margin-top: 20px;
+
+}
+
+.add-cart-btn{
+
+    margin-top:10px;
+
+    width:100%;
+
+}
+
+/* ===================================
+   TOAST MESSAGE
+=================================== */
+
+.toast {
+
+    position: fixed;
+
+    bottom: 30px;
+
+    right: 30px;
+
+    background: #222;
+
+    color: #fff;
+
+    padding: 15px 25px;
+
+    border-radius: 8px;
+
+    opacity: 0;
+
+    transition: opacity 0.3s ease;
+
+    z-index: 9999;
+
+}
+
+.toast.show {
+
+    opacity: 1;
+
+}
+
+
+/* ===================================
+   DARK MODE
+=================================== */
+
+body.dark-mode {
+
+    background-color: #121212;
+
+    color: #ffffff;
+
+}
+
+body.dark-mode header,
+
+body.dark-mode footer,
+
+body.dark-mode .product-card,
+
+body.dark-mode .cart-item,
+
+body.dark-mode .cart-summary,
+
+body.dark-mode .checkout-section form,
+
+body.dark-mode .confirmation-card,
+
+body.dark-mode .product-detail-card {
+
+    background-color: #1f1f1f;
+
+    color: #ffffff;
+
+}
+
+body.dark-mode input,
+
+body.dark-mode select {
+
+    background-color: #2a2a2a;
+
+    color: #ffffff;
+
+    border: 1px solid #444;
+
+}
+
+body.dark-mode a {
+
+    color: #ffffff;
+
+}
+
+/* ===================================
+   FORM ERRORS
+=================================== */
+
+.error-message {
+
+    display: block;
+
+    color: red;
+
+    font-size: 0.85rem;
+
+    margin-top: 4px;
+
+    min-height: 18px;
+
+}
