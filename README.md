@@ -1,10 +1,10 @@
 # ShopEase
 
-# 🛒 ShopEase – Online Food Ordering Website
+# 🛒 ShopEase – Online Stationary Ordering Website
 
 ## 🚀 Overview
-ShopEase is a modern and responsive **food ordering web application** built using HTML, CSS, and JavaScript.  
-It allows users to browse food items, add them to a cart, and place orders with a smooth UI experience.
+ShopEase is a modern and responsive **Stationary ordering web application** built using HTML, CSS, and JavaScript.  
+It allows users to browse Stationary items, add them to a cart, and place orders with a smooth UI experience.
 
 This project is designed as a **mini web development project** to demonstrate frontend development skills and basic e-commerce functionality.
 
@@ -13,7 +13,7 @@ This project is designed as a **mini web development project** to demonstrate fr
 ## ✨ Features
 
 - 🍔 Beautiful and responsive homepage
-- 📋 Food menu with categories
+- 📋 Stationary menu with categories
 - 🛒 Add to cart functionality
 - 💰 Cart price calculation
 - 🔐 Login / Signup UI (frontend)
